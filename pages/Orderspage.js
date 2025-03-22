@@ -1,12 +1,10 @@
 import React from "react";
-import Import from "../Globalimports/Imports";
+import Orderlayout from "../components/Ordercomponents/Orderslayout";
 
 
 const Orderspage = () => {
     return (
-        <Import.View>
-            <Import.Text>Orderspage</Import.Text>
-        </Import.View>
+        <Orderlayout />
     )
 }
 
