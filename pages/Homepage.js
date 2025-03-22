@@ -1,12 +1,11 @@
 import React from "react";
 import Import from "../Globalimports/Imports";
+import HomeLayout from "../components/Homecomponents/HomeLayout";
 
 
 const Homepage = () => {
     return (
-        <Import.View>
-            <Import.Text>Homepage</Import.Text>
-        </Import.View>
+        <HomeLayout />
     )
 }
 

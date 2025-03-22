@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
+import { colors } from "../Globalcolors/colors";
 
 export const fonts = () => {
     const [fontsLoaded] = useFonts({
@@ -55,7 +56,7 @@ export const Theme = StyleSheet.create({
         fontFamily: "Nunito-SemiBold",
     },
     distancebetweenmobedges: {
-        marginHorizontal: 18
+        marginHorizontal: 16
     },
     buttons_fontstyle: {
         fontFamily: "Nunito-SemiBold",

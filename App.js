@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
         <View style={{ flex: 1, backgroundColor: "white" }}>
-          <StatusBar style={Platform.OS === "ios" ? "light" : "dark"} backgroundColor="white" />
+          <StatusBar style={Platform.OS === "ios" ? "light" : "light"} backgroundColor="rgba(61, 180, 230,1)" />
           <Bottomtabnavigator />
         </View>
     </>
