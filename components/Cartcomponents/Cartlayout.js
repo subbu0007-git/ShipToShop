@@ -103,7 +103,7 @@ const Cartlayout = ({ cartItems, removeFromCart, clearCart }) => {
             {modalVisible && (
                 <SuccessModalpopup
                     modalVisible={modalVisible}
-                    handleCloseModal={handleCloseModal} // Pass correct handler to close modal
+                    handleCloseModal={handleCloseModal} 
                 />
             )}
         </>

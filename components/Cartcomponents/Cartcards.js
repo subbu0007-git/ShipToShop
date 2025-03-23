@@ -11,21 +11,13 @@ const Cartcards = ({ cartItems, handleRemove }) => {
 
                 <Import.View style={{ flex: 1, flexDirection: "column", justifyContent: "center" }}>
                     <Import.View style={{ marginBottom: 4 }}>
-                        <Import.Text
-                            style={[Import.Theme.h1, { maxWidth: "90%" }]}
-                            numberOfLines={3}
-                            ellipsizeMode="tail"
-                        >
-                            {item?.title}
-                        </Import.Text>
+                        <Import.Text style={[Import.Theme.h1, { maxWidth: "90%" }]} numberOfLines={3} ellipsizeMode="tail" >{item?.title}</Import.Text>
                     </Import.View>
                     <Import.View style={{ marginBottom: 6 }}>
                         <Import.Text style={[Import.Theme.h3, { fontSize: 16 }]}>Qty 1</Import.Text>
                     </Import.View>
                     <Import.View>
-                        <Import.Text style={[Import.Theme.h2, { fontSize: 16 }]}>
-                            Price ₹{item?.price}
-                        </Import.Text>
+                        <Import.Text style={[Import.Theme.h2, { fontSize: 16 }]}>Price ₹{item?.price}</Import.Text>
                     </Import.View>
                 </Import.View>
             </Import.View>
