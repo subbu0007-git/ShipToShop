@@ -11,7 +11,7 @@ const Homeheader = ({ handleheadertab, activetab }) => {
     ];
 
     return (
-        <Import.View style={{ paddingVertical: 16,  borderBottomColor: "rgba(61, 180, 230,0.8)", borderBottomWidth: 0 }}>
+        <Import.View style={{ paddingVertical: 16, borderBottomColor: "rgba(61, 180, 230,0.8)", borderBottomWidth: 0, marginHorizontal: Import.Theme.distancebetweenmobedges.marginHorizontal }}>
             <Import.FlatList
                 data={readers}
                 keyExtractor={(item, index) => index.toString()}
