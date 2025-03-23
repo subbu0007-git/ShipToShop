@@ -3,41 +3,10 @@ import Import from "../../Globalimports/Imports";
 
 const Cartcards = ({ cartItems, handleRemove }) => {
     const renderItem = ({ item, index }) => (
-        <Import.View
-            style={{
-                borderColor: "rgba(61, 180, 230,0.2)",
-                borderWidth: 1,
-                marginTop: 8,
-                marginBottom: index === cartItems?.length - 1 ? 10 : 0,
-                backgroundColor: "white",
-                shadowColor: "rgba(61, 180, 230,1)",
-                shadowOpacity: 0.3,
-                shadowOffset: { width: 0, height: 2 },
-                shadowRadius: 2,
-                elevation: 2,
-                borderRadius: 8,
-                justifyContent: "center",
-            }}
-        >
+        <Import.View style={{borderColor: "rgba(61, 180, 230,0.2)", borderWidth: 1, marginTop: 8,marginBottom: index === cartItems?.length - 1 ? 10 : 0,  backgroundColor: "white", shadowColor: "rgba(61, 180, 230,1)", shadowOpacity: 0.3, shadowOffset: { width: 0, height: 2 }, shadowRadius: 2, elevation: 2, borderRadius: 8, justifyContent: "center", }} >
             <Import.View style={{ flexDirection: "row" }}>
-                <Import.View
-                    style={{
-                        borderColor: "rgba(61, 180, 230,1)",
-                        borderWidth: 1,
-                        margin: 8,
-                        borderRadius: 8,
-                        overflow: "hidden",
-                    }}
-                >
-                    <Import.Image
-                        source={{ uri: item?.thumbnail }}
-                        style={{
-                            height: 100,
-                            width: 100,
-                            resizeMode: "contain",
-                            borderRadius: 8,
-                        }}
-                    />
+                <Import.View style={{ borderColor: "rgba(61, 180, 230,1)", borderWidth: 1, margin: 8, borderRadius: 8, overflow: "hidden", }} >
+                    <Import.Image source={{ uri: item?.thumbnail }} style={{ height: 100, width: 100, resizeMode: "contain", borderRadius: 8, }} />
                 </Import.View>
 
                 <Import.View style={{ flex: 1, flexDirection: "column", justifyContent: "center" }}>
